@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320">
+  <defs>
+    <filter id="chalk"><feTurbulence baseFrequency=".9" numOctaves="2" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2"/></filter>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5 0 10z" fill="#fef9c3"/></marker>
+    <style>.push{animation:pu 4s ease-in-out infinite}@keyframes pu{0%,20%{transform:translateY(-60px);opacity:0}40%,80%{transform:translateY(0);opacity:1}100%{transform:translateY(-60px);opacity:0}}
+      .hi{animation:h 3s steps(1) infinite}.h2{animation-delay:-1s}.h3{animation-delay:-2s}@keyframes h{0%{stroke:#fde047}33%{stroke:#f5f5f4}}</style>
+  </defs>
+  <rect width="1200" height="320" fill="#1f3b2d"/>
+  <rect x="10" y="10" width="1180" height="300" fill="none" stroke="#8b5a2b" stroke-width="14"/>
+  <g filter="url(#chalk)" font-family="'Segoe Print', 'Comic Sans MS', cursive">
+    <text x="60" y="110" font-size="24" fill="#bbf7d0">CSE207 —</text>
+    <text x="56" y="176" font-size="60" font-weight="700" fill="#f5f5f4">Data Structures</text>
+    <text x="60" y="226" font-size="22" fill="#fef9c3">search · sort · lists · stack · queue · trees</text>
+    <text x="60" y="270" font-size="18" fill="#a7f3d0">in Java ☕</text>
+    <!-- doubly linked list -->
+    <g transform="translate(640 60)" fill="none" stroke="#f5f5f4" stroke-width="2.5">
+      <g class="hi"><rect x="0" y="0" width="90" height="40"/><path d="M30 0v40M60 0v40"/></g>
+      <g class="hi h2"><rect x="140" y="0" width="90" height="40"/><path d="M170 0v40M200 0v40"/></g>
+      <g class="hi h3"><rect x="280" y="0" width="90" height="40"/><path d="M310 0v40M340 0v40"/></g>
+      <path d="M75 14H138M215 14H278" marker-end="url(#arr)" stroke="#fef9c3"/>
+      <path d="M155 28H92M295 28H232" marker-end="url(#arr)" stroke="#fef9c3"/>
+      <g fill="#f5f5f4" stroke="none" font-size="18"><text x="38" y="27">7</text><text x="176" y="27">3</text><text x="316" y="27">9</text></g>
+      <text x="386" y="26" stroke="none" fill="#a7f3d0" font-size="16">null</text>
+    </g>
+    <!-- stack -->
+    <g transform="translate(660 140)" fill="none" stroke="#f5f5f4" stroke-width="2.5">
+      <path d="M0 0v130h90V0"/>
+      <rect x="8" y="98" width="74" height="26" fill="#f5f5f4" fill-opacity=".1"/><rect x="8" y="68" width="74" height="26" fill="#f5f5f4" fill-opacity=".1"/>
+      <g class="push"><rect x="8" y="38" width="74" height="26" stroke="#fde047"/></g>
+      <text x="16" y="150" stroke="none" fill="#a7f3d0" font-size="15">push()</text>
+    </g>
+    <!-- tree -->
+    <g transform="translate(900 140)" stroke="#f5f5f4" stroke-width="2.5">
+      <path d="M100 18L50 70M100 18L150 70M50 70L25 120M50 70L75 120M150 70L175 120"/>
+      <g fill="#1f3b2d"><circle cx="100" cy="18" r="16"/><circle cx="50" cy="70" r="16"/><circle cx="150" cy="70" r="16"/><circle cx="25" cy="120" r="14"/><circle cx="75" cy="120" r="14"/><circle cx="175" cy="120" r="14"/></g>
+      <text x="80" y="160" stroke="none" fill="#a7f3d0" font-size="15">in-order</text>
+    </g>
+  </g>
+</svg>
